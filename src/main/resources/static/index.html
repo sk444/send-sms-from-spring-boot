@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hello WebSocket</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/main.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.4.0/sockjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.js"></script>
+    <script src="/main.js"></script>
+</head>
+  <body class="text-center">
+
+<noscript><h2 style="color: #ff0000">Seems your browser doesn't support Javascript! Websocket relies on Javascript being
+    enabled. Please enable
+    Javascript and reload this page!</h2></noscript>
+<div id="main-content" class="container border mt-5 >
+        <div class="col-md-6">
+
+            <form class="form-signin" id ="smsForm"  method="post">
+                <div class="form-group">
+                
+                <h2 class="mb-4">Send an SMS from Spring Boot Application</h2>
+                <h2 class="mb-4">
+                 <input type="text" placeholder="Enter the number"  id="to" />
+                </h2>
+                    <h2><textarea id="message" >Text message</textarea></h2>
+                </div>
+                <p> <button id="send" class="btn btn-lg btn-primary btn-block" type="submit">Send</button></p>
+                  <p class="mt-5 mb-3 text-muted">PixelTice &copy;2020</p>
+                
+            </form>
+        </div>
+    </div>
+   </div>
+</body>
+</html>
